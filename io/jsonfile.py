@@ -1,3 +1,12 @@
+
+"""
+__module__      = 'jsonfile.py'
+__author__      = 'Rob Mitchell <rlmitchell@gmail.com>,<rob.mitchell@objectstream.com>'
+__updated__     = '2020.04.23'
+__version__     = '0.0.1'
+__status__      = 'development'
+"""
+
 import json
 
 class JSON(object):
