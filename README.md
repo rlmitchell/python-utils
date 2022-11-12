@@ -1,6 +1,6 @@
 # python-utils
 
-- aws/rds_utils.py - AWS RDS utility classes
+- clone repo to your $PYTHONPATH
 
 
 
@@ -130,10 +130,24 @@ $ python3 example-deleting-manual-snapshot.py
 $ 
 ```
 
-
-
+&nbsp;
 
 #### Purge oldest N RDS manual snapshots 
+
+```python
+from pprint import pprint 
+from aws.rds_utils import AWSRDSManualSnapshotPurger
+
+AWSRDSManualSnapshotPurger('mydb', num_keep=1)()
+```
+
+Output:
+```bash
+$ python3 example-purging-manual-snapshots.py 
+delete: (datetime.datetime(2022, 11, 12, 22, 11, 48, 712000, tzinfo=tzutc()), 'mydb-20221112-1611', 'available')
+delete: (datetime.datetime(2022, 11, 12, 22, 15, 49, 792000, tzinfo=tzutc()), 'mydb-20221112-1614', 'available')
+$
+```
 
 
 
