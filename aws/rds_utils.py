@@ -60,7 +60,7 @@ class AWSRDSManualSnapshotsList:
 
 class AWSRDSManualSnapshotDelete:
     def __init__(self, snapshot_identifier, access_key=None, secret_key=None, region=None):
-        self.client = RDSClient(DBIdentifier, access_key=access_key, secret_key=secret_key, region=region)
+        self.client = RDSClient(access_key=access_key, secret_key=secret_key, region=region)
         self.snapshot_identifier = snapshot_identifier
 
     def __call__(self):
