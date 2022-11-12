@@ -1,6 +1,10 @@
 # python-utils
 
-- clone repo to your $PYTHONPATH
+clone repo to your $PYTHONPATH
+
+&nbsp;
+
+
 
 
 
@@ -83,7 +87,7 @@ $
 
 &nbsp;
 
-#### Delete RDS manual snapshot 
+#### aws - delete RDS manual snapshot 
 
 ```python
 from pprint import pprint 
@@ -132,7 +136,7 @@ $
 
 &nbsp;
 
-#### Purge oldest N RDS manual snapshots 
+#### aws - purge oldest N RDS manual snapshots 
 
 ```python
 from pprint import pprint 
