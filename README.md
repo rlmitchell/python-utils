@@ -2,11 +2,9 @@
 
 - aws/rds_utils.py - AWS RDS utility classes
 
-### Using aws/rds_utils
 
-&nbsp;
 
-#### Create a RDS manual snapshot 
+#### aws - create a RDS manual snapshot 
 
 ```python
 from pprint import pprint 
@@ -55,9 +53,8 @@ $
 
 &nbsp;
 
-#### Listing RDS manual snapshots 
+#### aws - listing RDS manual snapshots 
 
-example-listing-manual-snapshots.py
 ```python 
 from pprint import pprint 
 from aws.rds_utils import AWSRDSManualSnapshotsList 
