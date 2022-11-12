@@ -1,10 +1,17 @@
 # AWS classes
 
-- rds_utils.py - AWS RDS utility classes
-  * RDSClient
-  * AWSRDSManualSnapshotsList
-  * AWSRDSManualSnapshotDelete
-  * AWSRDSManualSnapshotPurger
-  * AWSRDSManualSnapshotCreate
+## Usage
+
+#### Listing RDS manual snapshots 
+
+
+#### Delete RDS manual snapshot 
+
+
+#### Create a RDS manual snapshot 
+
+
+#### Purge oldest N RDS manual snapshots 
+
 
 
