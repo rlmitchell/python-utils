@@ -27,7 +27,7 @@ class RDSClient:
             return None
         manual_snapshots = []
         for snapshot in self.client.describe_db_snapshots(SnapshotType='manual',DBInstanceIdentifier=self.db_identifier).get('DBSnapshots', None):
-            manual_snapshots.append( (snapshot['SnapshotCreateTime'], snapshot['DBSnapshotIdentifier']) )
+            manual_snapshots.append( (snapshot['SnapshotCreateTime'], snapshot['DBSnapshotIdentifier'], snapshot['Status']) )
         manual_snapshots.sort()
         return manual_snapshots
 
