@@ -7,8 +7,6 @@ __updated__    = '2022.11.12.1317'
 
 
 import boto3
-from decouple import config
-from pprint import pprint
 
 
 class RDSClient:
