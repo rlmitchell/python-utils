@@ -6,7 +6,6 @@ __tested__     = 'Python 3.8.10'
 __updated__    = '2022.11.12.1317'
 
 
-import boto3
 from aws.rds_client import RDSClient
 
 
