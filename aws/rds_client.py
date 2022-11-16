@@ -10,16 +10,13 @@ import boto3
 
 
 class RDSClient:
-    def __init__(self, db_identifier=None, access_key=None, secret_key=None, region=None):
-        if not access_key:
-            self.client = boto3.client('rds')
-        else:
-            self.client = boto3.client('rds', 
-                                       region_name = region,
-                                       aws_access_key_id = access_key,
-                                       aws_secret_access_key = secret_key)
-
+    def __init__(self, db_identifier=None, aws_credentials={}):
         self.db_identifier = db_identifier 
+        self.client = boto3.client('rds', 
+                                   region_name = aws_credentials['region'],
+                                   aws_access_key_id = aws_credentials['aws_access_key_id'],
+                                   aws_secret_access_key = aws_credentials['aws_secret_access_key'])
+
 
     def get_manual_snapshots(self):
         if self.db_identifier == None:
